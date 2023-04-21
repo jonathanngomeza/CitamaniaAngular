@@ -1,0 +1,18 @@
+<p>tablas-de-multiplicar works!</p>
+<input [(ngModel)]="numero" type="number" class="form-control" />
+<hr />
+{{ numero }}Xnumero= {{ numero * 230 }}
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Tabla</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let elemento of [].constructor(10); let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ numero }}x{{ i + 1 }}={{ numero * (i + 1) }}</td>
+    </tr>
+  </tbody>
+</table>

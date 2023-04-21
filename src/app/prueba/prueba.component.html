@@ -1,0 +1,11 @@
+<p (click)="this.dato = 'hola'">prueba works!</p>
+<p (click)="cambiarValor()">prueba works 2!</p>
+
+<input [(ngModel)]="dato" type="text" class="form-control" />
+<input [ngModel]="dato" type="text" class="form-control" />
+<button type="button" class="btn btn-success">Has click</button>
+<button (click)="mostrarValor()" type="button" class="btn btn-success">
+  Mostrar valor
+</button>
+<br />
+{{ dato }}
